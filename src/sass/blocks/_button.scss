@@ -1,0 +1,18 @@
+.button {
+    background: $mainColor;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    padding: 12px 26px;
+    transition: all .25s;
+    &:hover {
+        text-decoration: none;
+        color: #000000;
+        background: $mainColorHover;
+    }
+    &:active {
+        background: $mainColorActive;
+    }
+}
