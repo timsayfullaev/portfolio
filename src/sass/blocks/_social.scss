@@ -1,0 +1,24 @@
+.social {
+    width: 338px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: rotate(-90deg) translateY(-169px);
+    position: fixed;
+    left: 50px;
+    top: 50%;
+    &__text {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+    }
+    &__divider {
+        width: 70px;
+        height: 2px;
+        background-color: #000000;
+    }
+    &__icon {
+        transform: rotate(90deg);
+    }
+}

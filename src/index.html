@@ -49,17 +49,53 @@
 </head>
 
 <body>
+    <aside class="social">
+        <div class="social__text">Социальные сети</div>
+        <div class="social__divider"></div>
+        <a href="#" class="social__link"><img src="icons/social/github.svg" alt="github" class="social__icon"></a>
+        <a href="#" class="social__link"><img src="icons/social/instagram.svg" alt="instagram" class="social__icon"></a>
+        <a href="#" class="social__link"><img src="icons/social/facebook.svg" alt="facebook" class="social__icon"></a>
+    </aside>
+
+    <div class="hamburger">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line hamburger__line_long"></span>
+        <span class="hamburger__line"></span>
+    </div>
+
     <section class="intro">
         <div class="container">
             <div class="title title_circle">Меня зовут Александра Смит</div>
             <h1 class="title title_large">Я web-разработчик <br>
                 из города Москва</h1>
             <div class="intro__wrapper">
-                <a href="#" class="button">Портфолио</a>
-                <a href="#" class="intro__link">Про меня</a>
+                <a href="#portfolio" class="button">Портфолио</a>
+                <a href="#about" class="intro__link">Про меня</a>
             </div>
         </div>
     </section>
+
+    <div class="menu">
+        <div class="menu__block">
+            <div class="menu__close"><span></span><span></span></div>
+            <nav>
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#" class="menu__link">ПРО МЕНЯ</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">МОЙ ОПЫТ</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">МОИ НАВЫКИ</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">МОИ РАБОТЫ</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">ПРАЙС-ЛИСТ</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+            <div class="menu__social">
+                <a href="#"><img src="icons/social/github.svg" alt="github"></a>
+                <a href="#"><img src="icons/social/instagram.svg" alt="instagram"></a>
+                <a href="#"><img src="icons/social/facebook.svg" alt="facebook"></a>
+            </div>
+        </div>
+        <div class="menu__overlay"></div>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
