@@ -1,0 +1,43 @@
+.about {
+    margin-top: 120px;
+    &__grid {
+        display: grid;
+        grid-template-columns: 400px 570px;
+        grid-template-rows: minmax(243px, auto) minmax(252px, auto);
+        column-gap: 70px;
+        row-gap: 40px;
+    }
+    &__photo {
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    &__text {
+        padding-top: 7px;
+    }
+    &__description {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #000000;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    &__skills {
+        display: grid;
+        grid-template-columns: repeat(2, 260px);
+        grid-template-rows: repeat(2, minmax(116px, auto));
+        grid-column-gap: 50px;
+        grid-row-gap: 20px;
+        &-item {
+            display: grid;
+            grid-template-columns: 40px 200px;
+            grid-column-gap: 20px;
+        }
+        &-description {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000000;
+        }
+    }
+}

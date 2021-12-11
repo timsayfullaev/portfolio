@@ -1,0 +1,9 @@
+.icon {
+    position: relative;
+    padding-top: 15px;
+    padding-left: 15px;
+    @include before_circle;
+    &::before {
+        top: 0;
+    }
+}
