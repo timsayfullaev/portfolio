@@ -1,0 +1,78 @@
+.expirience {
+    padding-top: 120px;
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 136px;
+        justify-content: center;
+        margin-top: 60px;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 30px;
+        color: #000000;
+        position: relative;
+        padding-left: 43px;
+        margin-bottom: 0;
+        &::after {
+            width: 15px;
+            height: 15px;
+            background: $mainColor;
+            content: '';
+            display: block;
+            border-radius: 100%;
+            position: absolute;
+            top: 7px;
+            left: 0;
+        }
+    }
+    &__list {
+        list-style-type: none;
+        padding-left: 43px;
+        position: relative;
+        margin-bottom: 0;
+        &::before {
+            content: '';
+            display: block;
+            width: 1px;
+            height: calc(100% + 53px);
+            background-color: #000;
+            position: absolute;
+            left: 7px;
+            top: -53px
+        }
+        li {
+            margin-top: 45px;
+            position: relative;
+            &::before {
+                width: 35px;
+                height: 1px;
+                background-color: #000;
+                content: '';
+                display: block;
+                position: absolute;
+                left: -35px;
+                top: 18px;
+            }
+        }
+    }
+    &__flexbox {
+        display: flex;
+        align-items: center;
+    }
+    &__location {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #000000;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #000000;
+        margin-top: 12px;
+        margin-bottom: 0;
+    }
+}

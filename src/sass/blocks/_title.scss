@@ -12,6 +12,10 @@
     &_medium {
         font-size: 36px;
         line-height: 60px;
+        &-center {
+            margin-top: 6px;
+            text-align: center;
+        }
     }
     &_small {
         font-size: 14px;
@@ -22,5 +26,13 @@
         position: relative;
         z-index: 1;
         @include before_circle;
+    }
+    &_center {
+        text-align: center;
+        padding-left: 0;
+        &::before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
 }
