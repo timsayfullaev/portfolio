@@ -17,15 +17,18 @@
             text-align: center;
         }
     }
-    &_small {
-        font-size: 14px;
-        line-height: 21px;
-    }
     &_circle {
         padding-left: 10px;
         position: relative;
         z-index: 1;
         @include before_circle;
+    }
+    &_small {
+        font-size: 14px;
+        line-height: 21px;
+        &::before {
+            top: -8px;
+        }
     }
     &_center {
         text-align: center;
