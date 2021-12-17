@@ -1,0 +1,36 @@
+.portfolio {
+    padding-top: 120px;
+    &__grid {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 280px);
+        grid-template-rows: repeat(2, 280px);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+    &__link {
+        transition: all .25s;
+        &:hover {
+            transform: scale(1.04);
+        }
+        img {
+            filter: grayscale(100);
+            transition: all .25s;
+            &:hover {
+                filter: grayscale(0);
+            }
+        }
+        &_vertical {
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        &_horizontal {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+    }
+}
