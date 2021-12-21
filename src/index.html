@@ -104,7 +104,7 @@
                 <div class="about__text">
                     <h2 class="title title_circle">Про меня</h2>
                     <div class="title title_medium">Меня зовут Александра</div>
-                    <div class="divider divider_about"></div>
+                    <div class="divider divider_left"></div>
                     <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                         nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
@@ -149,7 +149,7 @@
         <div class="container">
             <h2 class="title title_circle title_center">Опыт</h2>
             <div class="title title_medium title_medium-center">Чем я буду полезна</div>
-            <div class="divider divider_center"></div>
+            <div class="divider"></div>
             <div class="expirience__grid">
                 <div class="expirience__column">
                     <h3 class="expirience__title">Образование</h3>
@@ -221,7 +221,7 @@
         <div class="container">
             <h2 class="title title_circle title_center">Навыки</h2>
             <div class="title title_medium title_medium-center">Что я использую в работе</div>
-            <div class="divider divider_center"></div>
+            <div class="divider"></div>
             <div class="skills__grid">
                 <div class="skills__item">
                     <div class="skills__logo"><img src="icons/skills/html5.svg" alt="html5"></div>
@@ -329,14 +329,16 @@
         <div class="container">
             <h2 class="title title_circle title_center">Портфолио</h2>
             <div class="title title_medium title_medium-center">Мои работы</div>
-            <div class="divider divider_center"></div>
+            <div class="divider"></div>
             <div class="portfolio__grid">
                 <a href="uber/" class="portfolio__link" target="_blank"><img src="img/works/uber.jpg" alt="uber"></a>
                 <a href="pulse/" class="portfolio__link" target="_blank"><img src="img/works/pulse.jpg" alt="pulse"></a>
                 <a href="#" class="portfolio__link"><img src="img/works/bread.jpg" alt="bread"></a>
-                <a href="#" class="portfolio__link portfolio__link_vertical"><img src="img/works/plans.jpg" alt="plans"></a>
+                <a href="#" class="portfolio__link portfolio__link_vertical"><img src="img/works/plans.jpg"
+                        alt="plans"></a>
                 <a href="#" class="portfolio__link"><img src="img/works/ipad.jpg" alt="ipad"></a>
-                <a href="#" class="portfolio__link portfolio__link_horizontal"><img src="img/works/mac.jpg" alt="mac"></a>
+                <a href="#" class="portfolio__link portfolio__link_horizontal"><img src="img/works/mac.jpg"
+                        alt="mac"></a>
             </div>
         </div>
     </section>
@@ -344,7 +346,7 @@
     <section class="price" id="price">
         <div class="container">
             <h2 class="title title_circle title_center">Прайс-лист</h2>
-            <div class="divider divider_center"></div>
+            <div class="divider"></div>
             <div class="price__grid">
                 <div class="price__column">
                     <ul class="price__list">
@@ -383,6 +385,32 @@
                             <p class="price__text">Создам дизайн для вашего сайта/приложения...</p>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts__grid">
+                <div class="contacts__photo"><img src="img/main_photo.jpg" alt="main_photo"></div>
+                <div class="contacts__block">
+                    <h2 class="title title_circle">Контакты</h2>
+                    <div class="title title_medium">Свяжитесь со мной</div>
+                    <div class="divider divider_left"></div>
+                    <p class="contacts__text">Любым удобным для вас способом:</p>
+                    <div class="contacts__social">
+                        <a href="#"><img src="icons/social/facebook.svg" alt="facebook"></a>
+                        <a href="#"><img src="icons/social/telegram.svg" alt="telegram"></a>
+                        <a href="#"><img src="icons/social/instagram.svg" alt="instagram"></a>
+                    </div>
+                    <p class="contacts__text">Или оставьте ваши данные и я сама вам напишу:</p>
+                    <form action="#" class="form">
+                        <div class="form__input"><label for="name">Ваше имя</label><input name="name" id="name" type="text"></div>
+                        <div class="form__input"><label for="email">Ваша почта</label><input name="email" id="email" type="email"></div>
+                        <div class="form__textarea"><label for="text">Ваше сообщение</label><textarea name="text" id="text"></textarea></div>
+                        <div><button type="submit" class="button">Отправить сообщение</button></div>
+                    </form>
                 </div>
             </div>
         </div>
