@@ -54,6 +54,25 @@
             font-size: 12px;
             line-height: 18px;
             color: #000000;
+            resize: none;
+        }
+    }
+    &__triggers {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-column-gap: 35px;
+    }
+    &__checkbox {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #000000;
+        display: flex;
+        align-items: center;
+        input {
+            margin-right: 10px;
         }
     }
 }
