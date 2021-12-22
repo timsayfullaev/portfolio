@@ -1,0 +1,161 @@
+@media (max-width: 1399px) {
+    .social {
+        display: none;
+    }
+}
+
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .about {
+        &__grid {
+            grid-template-columns: 300px 570px;
+            column-gap: 50px;
+        }
+    }
+
+    .expirience {
+        &__grid {
+            grid-template-columns: repeat(2,410px);
+        }
+    }
+
+    .skills {
+        &__grid {
+            grid-template-columns: repeat(3,270px);
+        }
+        &__percentages {
+            grid-template-columns: repeat(2,350px);
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .about {
+        &__grid {
+            grid-template-columns: 570px;
+            grid-template-rows: 440px minmax(252px,auto);
+            justify-content: center;
+        }
+        &__photo {
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+    }
+
+    .expirience {
+        &__grid {
+            grid-template-columns: 425px;
+            grid-row-gap: 40px;
+        }
+    }
+
+    .skills {
+        &__grid {
+            grid-template-columns: repeat(2,270px);
+        }
+        &__percentages {
+            grid-template-columns: repeat(2,330px);
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+    
+    .about {
+        &__grid {
+            grid-template-columns: 540px;
+            grid-template-rows: 340px repeat(2, minmax(252px,auto));
+        }
+        &__skills {
+            grid-column-gap: 20px;
+        }
+    }
+
+    .skills {
+        &__grid {
+            grid-template-columns: repeat(2,260px);
+            grid-template-rows: repeat(2,260px);
+        }
+        &__percentages {
+            grid-template-columns: repeat(2,246px);
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .hamburger {
+        top: 20px;
+        right: 20px;
+    }
+
+    .title {
+        &_large {
+            font-size: 26px;
+            line-height: 39px;
+        }
+        &_medium {
+            font-size: 24px;
+            line-height: 36px;
+            margin-top: 20px;
+        }
+    }
+
+    .menu {
+        &__block {
+            width: 250px;
+            padding-left: 20px;
+        }
+    }
+
+    .about {
+        padding-top: 40px;
+        &__grid {
+            grid-template-columns: 300px;
+        }
+        &__skills {
+            grid-template-columns: 260px;
+        }
+    }
+
+    .expirience {
+        padding-top: 40px;
+        &__grid {
+            grid-template-columns: 300px;
+            margin-top: 40px;
+        }
+    }
+
+    .divider {
+        margin-top: 15px;
+    }
+
+    .skills {
+        padding-top: 40px;
+        &__grid {
+            grid-template-columns: 270px;
+            row-gap: 20px;
+            margin-top: 20px;
+        }
+        &__percentages {
+            margin-top: 40px;
+            grid-template-columns: 300px;
+            row-gap: 40px;
+        }
+    }
+}
