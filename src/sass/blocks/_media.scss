@@ -31,6 +31,40 @@
             justify-content: center;
         }
     }
+
+    .portfolio {
+        &__grid {
+            grid-template-columns: repeat(auto-fit, 280px);
+            justify-content: center;
+        }
+        &__link {
+            &_vertical {
+                grid-column-start: unset;
+                grid-column-end: unset;
+                grid-row-start: unset;
+                grid-row-end: unset;
+            }
+            &_horizontal {
+                grid-column-start: unset;
+                grid-column-end: unset;
+                grid-row-start: unset;
+                grid-row-end: unset;
+            }
+        }
+    }
+
+    .price {
+        &__grid {
+            grid-column-gap: 100px;
+        }
+    }
+
+    .contacts {
+        &__grid {
+            grid-template-columns: 300px 540px;
+            grid-column-gap: 50px;
+        }
+    }
 }
 
 @media (max-width: 991px) {
@@ -63,6 +97,21 @@
         }
         &__percentages {
             grid-template-columns: repeat(2,330px);
+        }
+    }
+
+    .price {
+        &__grid {
+            grid-template-columns: repeat(auto-fit, 366px);
+        }
+    }
+
+    .contacts {
+        &__grid {
+            grid-template-columns: 540px;
+        }
+        &__photo {
+            display: none;
         }
     }
 }
@@ -156,6 +205,58 @@
             margin-top: 40px;
             grid-template-columns: 300px;
             row-gap: 40px;
+        }
+    }
+
+    .portfolio {
+        padding-top: 40px;
+        &__grid {
+            margin-top: 40px;
+            grid-row-gap: 20px;
+        }
+    }
+
+    .price {
+        &__grid {
+            padding-top: 20px;
+            grid-template-columns: repeat(auto-fit, 296px);
+        }
+    }
+
+    .contacts {
+        padding: 40px 0 50px 0;
+        &__grid {
+            grid-template-columns: 300px;
+        }
+    }
+
+    .form {
+        grid-template-columns: 300px;
+        grid-template-rows: minmax(45px,auto);
+        grid-auto-rows: minmax(45px,auto);
+        grid-row-gap: 20px;
+        &__textarea {
+            grid-column-start: unset;
+            grid-column-end: unset;
+            grid-row-start: unset;
+            grid-row-end: unset;
+            textarea {
+                height: 143px;
+            }
+        }
+        &__triggers {
+            grid-column-start: unset;
+            grid-column-end: unset;
+            grid-template-columns: auto;
+            grid-row-gap: 20px;
+            justify-items: center;
+            button {
+                order: 2;
+            }
+        }
+        &__checkbox {
+            order: 1;
+            width: 173px;
         }
     }
 }
